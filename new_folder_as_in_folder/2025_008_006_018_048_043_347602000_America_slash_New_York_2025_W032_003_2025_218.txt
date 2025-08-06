@@ -1,0 +1,12 @@
+Create a PLSQL that creates a table table_of_accounts that has an id guid automatically generated.
+
+CREATE TABLE table_of_accounts (
+    account_id RAW(16) DEFAULT SYS_GUID() PRIMARY KEY,
+);
+
+CREATE TABLE TABLE_OF_ACCOUNTS (
+    ACCOUNT_ID RAW(16)
+);
+
+ALTER TABLE TABLE_OF_ACCOUNTS MODIFY
+    ACCOUNT_ID DEFAULT SYS_GUID();
